@@ -1,0 +1,996 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VILLA YASUMIBA Okinawa Uruma | 東海岸には、あなたが知らない沖縄がある。</title>
+  <meta name="description" content="沖縄県うるま市の一棟貸し、Independent House 沖縄VILLA YASUMIBA Okinawa Uruma。海中道路や離島へ向かう東海岸の滞在拠点。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;700&amp;family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&amp;family=Noto+Sans+JP:wght@400;500&amp;family=Plus+Jakarta+Sans:wght@500&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --base: #F8F5F0;
+      --ink: #1C1C1A;
+      --accent: #C95F3A;
+      --brown: #7A6652;
+      --line: #E6DED4;
+      --paper: #FFFDFC;
+      --soft: rgba(230, 222, 212, 0.42);
+      --serif: "Zen Old Mincho", serif;
+      --sans: "Noto Sans JP", sans-serif;
+      --en: "Cormorant Garamond", "Times New Roman", serif;
+      --banner: "Plus Jakarta Sans", "Noto Sans JP", sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; overflow-x: clip; }
+    body { overflow-x: hidden; }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--base);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.95;
+      word-break: keep-all;
+      line-break: strict;
+      overflow-wrap: break-word;
+    }
+
+    img, iframe { display: block; width: 100%; }
+    img { height: auto; object-fit: cover; }
+    a { color: inherit; text-decoration: none; }
+    h1, h2, h3, p, figure, blockquote { margin: 0; }
+
+    h1, h2, h3 {
+      overflow-wrap: normal;
+    }
+
+    h1, h2 {
+      font-family: var(--serif);
+      font-weight: 700;
+      line-height: 1.28;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      font-weight: 500;
+      line-height: 1.55;
+    }
+
+    button, .cta {
+      min-height: 48px;
+    }
+
+    .lp-wrapper {
+      width: 100%;
+      padding-top: 0;
+      padding-bottom: 82px;
+    }
+
+    .section {
+      position: relative;
+      padding: clamp(72px, 9vw, 116px) 24px;
+    }
+
+    .section-inner {
+      position: relative;
+      z-index: 1;
+      width: min(1120px, 100%);
+      margin: 0 auto;
+    }
+
+    .kicker {
+      margin-bottom: 16px;
+      color: var(--accent);
+      font-family: var(--en);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      line-height: 1.45;
+      text-transform: uppercase;
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 4.2vw, 4.25rem);
+    }
+
+    .section-copy {
+      margin-top: 24px;
+      color: var(--brown);
+      line-height: 2.08;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 52px;
+      padding: 13px 22px;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      background: var(--accent);
+      color: #fff;
+      font-family: var(--en);
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 1.35;
+      text-align: center;
+      transition: transform 180ms ease, background 180ms ease;
+    }
+
+    .button:hover { transform: translateY(-1px); }
+    .button.dark { background: var(--ink); color: var(--base); }
+
+    .hero {
+      min-height: 100svh;
+      display: flex;
+      align-items: flex-end;
+      padding: clamp(116px, 13vw, 174px) 24px clamp(68px, 8vw, 104px);
+      color: #fff;
+      background:
+        linear-gradient(0deg, rgba(28, 28, 26, 0.76), rgba(28, 28, 26, 0.35)),
+        url("photos/spots/kafu-banta-hero.jpg") center / cover no-repeat;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: auto 0 0;
+      z-index: 0;
+      height: 38%;
+      background: linear-gradient(0deg, rgba(28, 28, 26, 0.66), transparent);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      width: min(1040px, 100%);
+      margin: 0 auto;
+    }
+
+    .hero h1 {
+      max-width: 760px;
+      font-size: clamp(2.2rem, min(5vw, 8.4vh), 4.35rem);
+      text-shadow: 0 18px 42px rgba(0, 0, 0, 0.28);
+    }
+
+    .hero-tagline {
+      max-width: 680px;
+      margin-top: 20px;
+      color: rgba(255, 255, 255, 0.75);
+      font-family: var(--sans);
+      font-size: 14px;
+      letter-spacing: 0.04em;
+      line-height: 1.8;
+    }
+
+    .hero-lead {
+      max-width: 610px;
+      margin-top: 16px;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 16px;
+      line-height: 2;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 32px;
+    }
+
+    .section-wave {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -1px;
+      z-index: 0;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+      pointer-events: none;
+    }
+
+    .section-wave svg {
+      display: block;
+      width: 100%;
+      height: 60px;
+    }
+
+    .features {
+      background: var(--ink);
+      color: var(--base);
+    }
+
+    .features-grid {
+      width: min(1120px, 100%);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .feature-item {
+      min-height: 96px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 16px;
+      border-left: 1px solid rgba(248, 245, 240, 0.16);
+      font-family: var(--en);
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      line-height: 1.6;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .feature-item:last-child { border-right: 1px solid rgba(248, 245, 240, 0.16); }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 0.88fr);
+      gap: clamp(34px, 6vw, 72px);
+      align-items: center;
+    }
+
+    .two-col.reverse {
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr);
+    }
+
+    .two-col.reverse .text-col { order: 2; }
+    .two-col.reverse .media-col { order: 1; }
+
+    .area {
+      background: var(--base);
+      overflow: hidden;
+    }
+
+    .area::before {
+      content: "";
+      position: absolute;
+      top: -120px;
+      right: -180px;
+      z-index: 0;
+      width: 520px;
+      height: 520px;
+      border-radius: 58% 42% 34% 66% / 50% 58% 42% 50%;
+      background: radial-gradient(circle at 48% 48%, rgba(201, 95, 58, 0.12), transparent 70%);
+      filter: blur(44px);
+      pointer-events: none;
+    }
+
+    .area .section-title,
+    .care .section-title,
+    .access .section-title {
+      font-size: clamp(1.9rem, 3.55vw, 3.35rem);
+    }
+
+    .area-copy {
+      display: grid;
+      gap: 18px;
+      margin-top: 24px;
+      color: var(--brown);
+      line-height: 2.08;
+    }
+
+    .photo-frame {
+      position: relative;
+      overflow: hidden;
+      min-height: 520px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .photo-frame img {
+      width: 100%;
+      height: 100%;
+      min-height: inherit;
+    }
+
+    .photo-frame::after {
+      content: attr(data-label);
+      position: absolute;
+      left: 18px;
+      bottom: 18px;
+      padding: 8px 10px;
+      background: rgba(28, 28, 26, 0.68);
+      color: var(--base);
+      font-family: var(--en);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .spot-list {
+      display: grid;
+      gap: 0;
+      margin: 34px 0 0;
+      padding: 0;
+      list-style: none;
+      border-top: 1px solid var(--line);
+    }
+
+    .spot-list li {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 17px 0;
+      border-bottom: 1px solid var(--line);
+      color: var(--brown);
+    }
+
+    .spot-list strong {
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    .care {
+      background: var(--paper);
+      overflow: hidden;
+    }
+
+    .care::before {
+      content: "";
+      position: absolute;
+      top: -70px;
+      left: -120px;
+      z-index: 0;
+      width: 460px;
+      height: 460px;
+      border-radius: 60% 40% 30% 70% / 50% 60% 40% 50%;
+      background: radial-gradient(circle at 52% 48%, rgba(230, 222, 212, 0.72), transparent 68%);
+      filter: blur(34px);
+      opacity: 0.3;
+      pointer-events: none;
+    }
+
+    .care-quote {
+      margin-top: 28px;
+      padding-left: 18px;
+      border-left: 3px solid var(--accent);
+      color: var(--ink);
+      font-family: var(--serif);
+      font-size: clamp(1.2rem, 2.1vw, 1.7rem);
+      line-height: 1.8;
+    }
+
+    .reviews {
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background: var(--base);
+    }
+
+    .reviews-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 30px;
+    }
+
+    .slider-track {
+      overflow: hidden;
+      position: relative;
+    }
+
+    .slider {
+      display: flex;
+      transition: transform 0.36s ease;
+    }
+
+    .slide {
+      flex-shrink: 0;
+    }
+
+    .slider-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .slider-dots {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .slider-arrow {
+      width: 32px;
+      height: 32px;
+      min-height: 0;
+      border-radius: 50%;
+      background: transparent;
+      border: 1px solid var(--line);
+      color: var(--ink);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      line-height: 1;
+      padding: 0;
+      flex-shrink: 0;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .slider-arrow:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .slider-arrow:disabled {
+      opacity: 0.25;
+      cursor: default;
+    }
+
+    .slider-dot {
+      width: 5px;
+      height: 5px;
+      min-height: 0;
+      border-radius: 50%;
+      background: var(--line);
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .slider-dot.active {
+      background: var(--accent);
+      transform: none;
+    }
+
+    .slide {
+      min-height: 280px;
+      display: grid;
+      align-content: center;
+      gap: 22px;
+      padding: clamp(28px, 5vw, 48px);
+      border: 1px solid var(--line);
+      background: var(--paper);
+      box-sizing: border-box;
+    }
+
+    .review-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      color: var(--accent);
+      font-family: var(--en);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .stars {
+      color: var(--accent);
+      font-size: 14px;
+      letter-spacing: 0.08em;
+    }
+
+    .slide blockquote {
+      font-family: var(--serif);
+      font-size: clamp(1.18rem, 2.1vw, 1.8rem);
+      line-height: 1.78;
+    }
+
+    .space {
+      background: var(--paper);
+    }
+
+    .space-head {
+      max-width: 700px;
+    }
+
+    .card-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 40px;
+    }
+
+    .space-card {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: var(--base);
+    }
+
+    .space-card img {
+      aspect-ratio: 4 / 5;
+      height: 100%;
+    }
+
+    .space-card h3 {
+      min-height: 58px;
+      display: flex;
+      align-items: center;
+      padding: 14px 16px;
+      color: var(--brown);
+      font-family: var(--en);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .access {
+      background: #EFE9E0;
+    }
+
+    .access-card {
+      display: grid;
+      align-content: center;
+      gap: 22px;
+      min-height: 460px;
+      padding: clamp(28px, 5vw, 52px);
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .access-list {
+      display: grid;
+      gap: 16px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .access-list li {
+      display: grid;
+      gap: 4px;
+      color: var(--brown);
+    }
+
+    .access-list strong {
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    .access-list a {
+      word-break: break-all;
+    }
+
+    .map-wrap {
+      min-height: 460px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: var(--base);
+    }
+
+    .map-wrap iframe {
+      height: 100%;
+      min-height: 460px;
+      border: 0;
+      filter: saturate(0.9) contrast(0.98);
+    }
+
+    .final-cta {
+      padding: clamp(76px, 10vw, 120px) 24px;
+      background: var(--accent);
+      color: #fff;
+      text-align: center;
+    }
+
+    .final-cta .section-inner {
+      display: grid;
+      justify-items: center;
+      gap: 22px;
+    }
+
+    .final-cta h2 {
+      max-width: 820px;
+      font-size: clamp(2rem, 4.5vw, 4.2rem);
+    }
+
+    .final-cta p {
+      max-width: 640px;
+      color: rgba(255, 255, 255, 0.86);
+    }
+
+    .fixed-cta {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 900;
+      display: flex;
+      justify-content: center;
+      padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+      border-top: 1px solid rgba(28, 28, 26, 0.1);
+      background: rgba(248, 245, 240, 0.92);
+      backdrop-filter: blur(14px);
+    }
+
+    .fixed-cta .button {
+      width: min(430px, 100%);
+      box-shadow: 0 14px 34px rgba(28, 28, 26, 0.16);
+    }
+
+    @media (max-width: 920px) {
+      .features-grid,
+      .card-grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .two-col,
+      .two-col.reverse {
+        grid-template-columns: 1fr;
+      }
+
+      .two-col.reverse .text-col,
+      .two-col.reverse .media-col {
+        order: initial;
+      }
+
+      .photo-frame,
+      .access-card,
+      .map-wrap,
+      .map-wrap iframe {
+        min-height: 380px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      body { font-size: 14px; }
+
+      .section {
+        padding: 62px 20px;
+      }
+
+      .hero {
+        min-height: 100svh;
+        padding: 98px 20px 54px;
+      }
+
+      .hero h1 {
+        max-width: 100%;
+        font-size: clamp(1.84rem, 7.1vw, 2.12rem);
+        overflow-wrap: anywhere;
+      }
+
+      .hero h1 br { display: none; }
+
+      .hero-tagline {
+        font-size: 12px;
+      }
+
+      .hero-lead {
+        font-size: 14px;
+        line-height: 1.95;
+      }
+
+      .hero-actions,
+      .hero-actions .button {
+        width: 100%;
+      }
+
+      .section-title,
+      .area .section-title,
+      .care .section-title,
+      .access .section-title,
+      .final-cta h2 {
+        font-size: clamp(1.8rem, 8.4vw, 2.55rem);
+      }
+
+      .features-grid,
+      .card-grid-3 {
+        grid-template-columns: 1fr;
+      }
+
+      .feature-item {
+        min-height: 72px;
+        border-left: 0;
+        border-top: 1px solid rgba(248, 245, 240, 0.16);
+      }
+
+      .feature-item:last-child { border-right: 0; }
+
+      .photo-frame {
+        min-height: 320px;
+      }
+
+      .spot-list li {
+        display: grid;
+        gap: 4px;
+      }
+
+      .reviews-head {
+        display: block;
+      }
+
+      .slide blockquote {
+        font-size: 1rem;
+      }
+
+      .space-card img {
+        aspect-ratio: 16 / 11;
+      }
+
+      .map-wrap,
+      .map-wrap iframe {
+        min-height: 350px;
+      }
+
+      .fixed-cta {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="lp-wrapper">
+    <header class="section hero">
+      <!-- 写真差し込み: ヒーロー背景 — 建物外観または室内全景（広角・温かみのある光） -->
+      <div class="hero-inner">
+        <p class="kicker">VILLA YASUMIBA OKINAWA URUMA</p>
+        <h1>東海岸には、<wbr>あなたが知らない<wbr>沖縄がある。</h1>
+        <p class="hero-tagline">YASUMIBAは東海岸を遊び尽くすのに最適な拠点。</p>
+        <p class="hero-lead">
+          地元の朝市。<br>
+          誰もいないビーチ。<br>
+          果報バンタ。
+        </p>
+        <div class="hero-actions">
+          <a class="button cta" href="https://www.booking.com/hotel/jp/yasumiba.ja.html" target="_blank" rel="noopener">空き日程を確認する</a>
+        </div>
+      </div>
+      <div class="section-wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="#F8F5F0" opacity="0.92"/>
+        </svg>
+      </div>
+    </header>
+
+    <section class="features" aria-label="宿の特徴">
+      <div class="features-grid">
+        <div class="feature-item">1棟貸切</div>
+        <div class="feature-item">最大10名</div>
+        <div class="feature-item">Booking.com ★9.5</div>
+        <div class="feature-item">海中道路まで車20分</div>
+      </div>
+    </section>
+
+    <section class="section area">
+      <div class="section-wave" aria-hidden="true" style="top:0; bottom:auto; transform:rotate(180deg); opacity:.4;">
+        <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="#E6DED4"/>
+        </svg>
+      </div>
+      <div class="section-inner two-col">
+        <div class="text-col">
+          <p class="kicker">East Coast Route</p>
+          <h2 class="section-title">こんな沖縄が、<wbr>あったのか。</h2>
+          <div class="area-copy">
+            <p>海中道路。与勝半島から平安座島まで、海の上を4.7kmの道路がまっすぐ走る。窓を開けると、潮風がダイレクトに入ってくる。その先に宮城島、さらに伊計島。橋でつながる島が、つづく。</p>
+            <p>宮城島の崖の上に、「果報バンタ」がある。沖縄の言葉で、幸せの崖。断崖絶壁から見下ろすエメラルドグリーンの海は、静かで、人がいない。</p>
+            <p>浜比嘉島には、石垣と赤瓦の民家が今も残っている。ガイドブックには載っていない。地元の人が昔から、普通に来ていた島。</p>
+            <p>東海岸のビーチには、なぜかほとんど人がいない。西海岸と同じ沖縄の海なのに。</p>
+          </div>
+          <ul class="spot-list">
+            <li><strong>海中道路</strong><span>車20分</span></li>
+            <li><strong>伊計島・宮城島・浜比嘉島</strong><span>車40分（橋でつながる離島群）</span></li>
+            <li><strong>果報バンタ</strong><span>車45分・入場無料</span></li>
+            <li><strong>うるマルシェ</strong><span>車5分</span></li>
+            <li><strong>勝連城跡</strong><span>車10分（世界遺産）</span></li>
+            <li><strong>うるまの闘牛</strong><span>車15分</span></li>
+          </ul>
+        </div>
+        <div class="media-col">
+          <!-- 写真差し込み: 海中道路・離島・果報バンタからエメラルドグリーンの海 -->
+          <figure class="photo-frame" data-label="Kaichu road / Uruma coast">
+            <img src="photos/spots/kaichu-road-1.jpg" alt="うるま市の海中道路" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section care">
+      <div class="section-inner two-col reverse">
+        <div class="text-col">
+          <p class="kicker">Owner Care</p>
+          <h2 class="section-title">何も考えずに、<wbr>休めた。</h2>
+          <div class="section-copy">
+            <p>冷蔵庫に、ゴーヤとジュース。</p>
+            <p>ミキサー、ボードゲーム、何種類も。</p>
+            <p>「あったらいいな」が全部あった。</p>
+          </div>
+          <blockquote class="care-quote">
+            「5つ星ホテル以上の気配りを感じた」<br>
+            ——Googleマップ、家族旅行のゲストより
+          </blockquote>
+        </div>
+        <div class="media-col">
+          <!-- 写真差し込み: 宿の入口・外観またはリビング全景 -->
+          <figure class="photo-frame" data-label="Living / entrance">
+            <img src="photos/villa/yasumiba_7ec5826c.jpg" alt="VILLA YASUMIBA 室内" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews" aria-label="口コミ">
+      <div class="section-inner">
+        <div class="reviews-head">
+          <div>
+            <p class="kicker">Guest Voices</p>
+            <h2 class="section-title">泊まった方の声</h2>
+          </div>
+        </div>
+        <div class="slider-track">
+          <div class="slider" id="reviewSlider">
+            <article class="slide">
+              <div class="review-meta"><span>Google Maps</span><span class="stars">★★★★★</span></div>
+              <blockquote>「オーナーが家族のように接してくれ、5つ星ホテル以上の気配りを感じた。清潔感があり、家族連れに最適。」</blockquote>
+            </article>
+            <article class="slide">
+              <div class="review-meta"><span>Booking.com</span><span class="stars">★★★★★</span></div>
+              <blockquote>「ホストさんとの連絡がとてもスムーズだった、いろいろ気を遣ってくださり冷蔵庫の中にかわいいゴーヤやジュースのサービスまで✨ 朝にはスムージーをミキサーでつくったり、みんなで遊べるゲームもたくさんあって。できていたら楽しすぎてもっと遊んでました！！」</blockquote>
+            </article>
+            <article class="slide">
+              <div class="review-meta"><span>Booking.com</span><span class="stars">★★★★★</span></div>
+              <blockquote>「お家のような空間ですごく過ごしやすかったです。ドリンクも無料で冷蔵庫に入っていたのも嬉しかったです！ チェックインも早めに準備終えてくれて、オーナーさんは優しい人だなと思いました！」</blockquote>
+            </article>
+            <article class="slide">
+              <div class="review-meta"><span>Booking.com</span><span class="stars">★★★★★</span></div>
+              <blockquote>”The photos are accurate but don't do it justice. It's bigger on the inside than on the outside. I liked it so much that I took lots of pictures inside and out to share with my friends. If I ever visit Uruma in the future, I will definitely try to book this.”</blockquote>
+            </article>
+            <article class="slide">
+              <div class="review-meta"><span>Google Maps</span><span class="stars">★★★★★</span></div>
+              <blockquote>”The staff are awesome, super friendly and helpful.”</blockquote>
+            </article>
+          </div>
+        </div>
+        <div class="slider-nav">
+          <button class="slider-arrow" id="sliderPrev" aria-label="前の口コミ">&#8249;</button>
+          <div class="slider-dots" id="sliderDots"></div>
+          <button class="slider-arrow" id="sliderNext" aria-label="次の口コミ">&#8250;</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section space">
+      <div class="section-inner">
+        <div class="space-head">
+          <p class="kicker">Private House</p>
+          <h2 class="section-title">写真より、<wbr>広い。</h2>
+          <p class="section-copy">
+            「写真は正確だが、実物の方が広く感じる」——Booking.comゲスト。新築。設備は全部新しい。リビング・キッチン・寝室・浴室——10名が過ごす空間として、不足がない。調理器具完備。ボードゲームのコレクション。
+          </p>
+        </div>
+        <!-- 写真差し込み: リビング / キッチン / 寝室 / 浴室（各1枚） -->
+        <div class="card-grid-3">
+          <article class="space-card">
+            <img src="photos/villa/yasumiba_e1b6a8b0.jpg" alt="VILLA YASUMIBA リビング" loading="lazy">
+            <h3>Living</h3>
+          </article>
+          <article class="space-card">
+            <img src="photos/villa/yasumiba_70763ec7.jpg" alt="VILLA YASUMIBA キッチン" loading="lazy">
+            <h3>Kitchen</h3>
+          </article>
+          <article class="space-card">
+            <img src="photos/villa/yasumiba_1eff0de1.jpg" alt="VILLA YASUMIBA 寝室" loading="lazy">
+            <h3>Bedroom</h3>
+          </article>
+          <article class="space-card">
+            <img src="photos/villa/yasumiba_ad92df1b.jpg" alt="VILLA YASUMIBA バスルーム" loading="lazy">
+            <h3>Bathroom</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section access">
+      <div class="section-inner two-col reverse">
+        <div class="text-col access-card">
+          <p class="kicker">Access</p>
+          <h2 class="section-title">那覇空港から、<wbr>東海岸のうるまへ。</h2>
+          <p class="section-copy">那覇空港から車50〜60分。沖縄自動車道「沖縄北IC」経由で、海中道路やうるマルシェへ向かいやすい住宅街にあります。</p>
+          <ul class="access-list">
+            <li><strong>住所</strong><span>〒904-2221 沖縄県うるま市平良川306-9</span></li>
+            <li><strong>Googleマップ</strong><a href="https://maps.app.goo.gl/DzYAKemADFCuFaQC7" target="_blank" rel="noopener">https://maps.app.goo.gl/DzYAKemADFCuFaQC7</a></li>
+            <li><strong>駐車場</strong><span>2台・無料</span></li>
+          </ul>
+        </div>
+        <div class="media-col map-wrap">
+          <!-- Googleマップ埋め込み（iframeで地図表示） -->
+          <iframe title="VILLA YASUMIBA Okinawa Uruma Google Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4854.790297042546!2d127.84717087638957!3d26.36649118334901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e50fec333685b3%3A0x4d25de5020dd9fa2!2sYASUMIBA%20Okinawa%20Uruma!5e1!3m2!1sja!2sjp!4v1780394399318!5m2!1sja!2sjp"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="section-inner">
+        <p class="kicker">Booking</p>
+        <h2>東海岸には、<wbr>あなたが知らない<wbr>沖縄がある。</h2>
+        <a class="button cta dark" href="https://www.booking.com/hotel/jp/yasumiba.ja.html" target="_blank" rel="noopener">Booking.com で空き日程を確認する →</a>
+        <p>料金は時期により変動します。最新の空き状況はBooking.comよりご確認ください。</p>
+      </div>
+    </section>
+  </div>
+
+  <div class="fixed-cta">
+    <a class="button cta" href="https://www.booking.com/hotel/jp/yasumiba.ja.html" target="_blank" rel="noopener">Booking.com で空き日程を確認する →</a>
+  </div>
+  <script>
+    (function () {
+      var track = document.querySelector('.slider-track');
+      var slider = document.getElementById('reviewSlider');
+      var dotsContainer = document.getElementById('sliderDots');
+      var prevBtn = document.getElementById('sliderPrev');
+      var nextBtn = document.getElementById('sliderNext');
+      if (!slider || !track) return;
+
+      var slides = slider.querySelectorAll('.slide');
+      var total = slides.length;
+      var current = 0;
+      var startX = 0;
+
+      function setWidths() {
+        var w = track.offsetWidth;
+        slider.style.width = (w * total) + 'px';
+        slides.forEach(function (s) {
+          s.style.width = w + 'px';
+        });
+        render();
+      }
+
+      function render() {
+        var w = track.offsetWidth;
+        slider.style.transform = 'translateX(-' + (current * w) + 'px)';
+        dotsContainer.querySelectorAll('.slider-dot').forEach(function (d, i) {
+          d.classList.toggle('active', i === current);
+        });
+        if (prevBtn) prevBtn.disabled = current === 0;
+        if (nextBtn) nextBtn.disabled = current === total - 1;
+      }
+
+      function goTo(i) {
+        current = Math.max(0, Math.min(i, total - 1));
+        render();
+      }
+
+      slides.forEach(function (_, i) {
+        var dot = document.createElement('button');
+        dot.className = 'slider-dot' + (i === 0 ? ' active' : '');
+        dot.setAttribute('aria-label', (i + 1) + '枚目');
+        dot.addEventListener('click', function () { goTo(i); });
+        dotsContainer.appendChild(dot);
+      });
+
+      if (prevBtn) prevBtn.addEventListener('click', function () { goTo(current - 1); });
+      if (nextBtn) nextBtn.addEventListener('click', function () { goTo(current + 1); });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowLeft') goTo(current - 1);
+        if (e.key === 'ArrowRight') goTo(current + 1);
+      });
+
+      slider.addEventListener('touchstart', function (e) {
+        startX = e.touches[0].clientX;
+      }, { passive: true });
+
+      slider.addEventListener('touchend', function (e) {
+        var dx = e.changedTouches[0].clientX - startX;
+        if (Math.abs(dx) > 40) goTo(dx < 0 ? current + 1 : current - 1);
+      }, { passive: true });
+
+      window.addEventListener('resize', setWidths);
+      setWidths();
+    })();
+  </script>
+</body>
+</html>

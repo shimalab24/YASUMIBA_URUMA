@@ -1,1 +1,0 @@
-# YASUMIBA_URUMA
